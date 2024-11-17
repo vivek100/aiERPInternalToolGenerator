@@ -1,6 +1,7 @@
 # AI ERP/Internal tool Generator CLI
 
 A powerful command-line tool that generates complete web applications from natural language descriptions using AI. The tool supports both OpenAI's GPT-4 and Anthropic's Claude models.
+
 I created this CLI to run experiments with various agentic flow approach to create fullstack webapp with high accuracy, will use CLI to create 100s of project and see how different approaches fair down.
 
 ## How it works
