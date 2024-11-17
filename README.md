@@ -1,6 +1,10 @@
-# AI Code Generator CLI
+# AI ERP/Internal tool Generator CLI
 
 A powerful command-line tool that generates complete web applications from natural language descriptions using AI. The tool supports both OpenAI's GPT-4 and Anthropic's Claude models.
+I created this CLI to run experiments with various agentic flow approach to create fullstack webapp with high accuracy, will use CLI to create 100s of project and see how different approaches fair down.
+
+## How it works
+Takes your user input and passes through multiple chained AI calls with custom prompts to create detailed functional requirements to techincal requirements and then detailed code.
 
 ## Features
 
@@ -14,7 +18,23 @@ A powerful command-line tool that generates complete web applications from natur
   - Full project setup
 - Rich console output with progress tracking
 - Modular and extensible architecture
+- Limitations
+   - Currently it only supports react and sqlite
+   - Have not added login flow but you can edit the promts and make it work.
 
+## Coming very Soon
+- A web interface version to create the code, chat with it and download the code
+- Differen promt methodologies to create higher accuracy code
+- Support different tech stack
+
+## Coming Soon
+- Support for authentication and basic security & privacy protocols
+- Reduce token usage by using boilerplates
+- Use vector embeddings to reduce input tokens
+- AI agents to do run tests
+- Conversation flow to make changes based on user input (Goal right now is to create one shot projects which are 99.99% accurate and then work with them with cursor/copilot
+- Add various UI themes that will work
+- Custome finetune models if accuracy with base models it not high
 
 ## Installation
 
@@ -54,7 +74,7 @@ codegen "Create a todo app" --mode full --model anthropic
   - `full`: Generate requirements, code, and create project files
   - `--model`: AI model provider
   - `openai`: Use OpenAI's GPT-4 (default)
-  - `anthropic`: Use Anthropic's Claude
+  - `anthropic`: Use Anthropic's Claude(I do not reccomend as their API output now days is limited to 1024 tokens leading to output getting truncated and lost.
 
 ### Examples
 
